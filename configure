@@ -28,7 +28,7 @@ install_berrynet_repository() {
 
 install_system_dependencies() {
     sudo apt-get update
-    sudo apt-get install -y python-dev python-pip python-opencv mongodb libkrb5-dev libzmq3-dev libyaml-dev imagemagick curl fswebcam wget git libopencv-dev
+    sudo apt-get install -y python-dev python-pip python-opencv mongodb-server libkrb5-dev libzmq3-dev libyaml-dev imagemagick curl fswebcam wget git libopencv-dev
     sudo apt-get install -y lsb-release
     sudo service mongodb start
     sudo -H pip install watchdog cython
